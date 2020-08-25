@@ -1,0 +1,131 @@
+.swipe {
+  display: flex;
+  justify-content: center;
+  &__content {
+    width: 350px;
+  }
+  .swipeable-list-item__content {
+    justify-content: center;
+    padding: 5px 0;
+  }
+  .swipe__lable {
+    font-size: 20px;
+  }
+  .swipe__lable--gray {
+    color: #9ad45c;
+  }
+  .swipe__lable--red {
+    color: #fe3c72;
+  }
+
+  .card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    &__header {
+      background-color: rgba(238, 235, 235, 0.356);
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      .header {
+        &__avatar {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 1px solid rgb(196, 196, 196);
+          padding: 5px;
+          margin-top: 10px;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .profile {
+        text-align: center;
+        &__title {
+          color: rgb(172, 172, 172);
+        }
+        &__content {
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+      .action {
+        display: flex;
+        margin-bottom: 10px;
+        &__item {
+          cursor: pointer;
+          padding: 6px;
+          .mdi {
+            font-size: 25px;
+            color: rgb(235, 228, 228);
+          }
+        }
+        &__item:hover {
+          .mdi {
+            color: #9ad45c;
+          }
+        }
+        .active {
+          .mdi {
+            color: #9ad45c;
+          }
+        }
+      }
+    }
+  }
+}
+.favouritelist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  box-shadow: 5px 0 5px -5px #b3b3b3;
+  &__header {
+    text-align: center;
+    font-size: 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fe3c72;
+    box-shadow: 0 5px 5px -5px #b3b3b3;
+    h4 {
+      color: #fff;
+      margin: 0;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    margin-top: 10px;
+  }
+  .content__item {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 120px;
+    width: 90px;
+    background-position: 50% 48.3871%;
+    background-size: auto 108.401%;
+    p {
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
